@@ -4,10 +4,8 @@ metadata:
   name: vlan3440
   annotations:
     field.cattle.io/description: Creates VLAN3440 network attachment definition
-    #  key: string
    labels:
      {}
-    #  key: string
   namespace: default
 spec:
   config: >-
