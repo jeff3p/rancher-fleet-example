@@ -4,7 +4,7 @@ metadata:
   name: vlan21
   namespace: default
   annotations:
-    field.cattle.io/description: Creates VLAN21 network attachment definition
+    field.cattle.io/description: Creates VLAN21 network attachment definition TOTALLY COOL DESCRIPTION UPDATE
   labels: {}
 spec:
   config: >-
