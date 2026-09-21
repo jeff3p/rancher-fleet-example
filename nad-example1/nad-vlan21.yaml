@@ -1,0 +1,11 @@
+apiVersion: k8s.cni.cncf.io/v1
+kind: NetworkAttachmentDefinition
+metadata:
+  name: vlan21
+  namespace: default
+  annotations:
+    field.cattle.io/description: Creates VLAN21 network attachment definition
+  labels: {}
+spec:
+  config: >-
+    {"cniVersion":"0.3.1","name":"vlan21","type":"bridge","bridge":"mgmt-br","promiscMode":true,"vlan":21,"ipam":{}}
