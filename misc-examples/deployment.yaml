@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: golang-helloworld
+  namespace: default
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: golang-helloworld
+  template:
+    metadata:
+      labels:
+        app: golang-helloworld
+    spec:
+      containers:
+        - name: golang-helloworld
+          image: quay.io/jfronius/golang-helloworld:latest
+          ports:
+            - containerPort: 8080
