@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: golang-helloworld
-          image: quay.io/jfronius/golang-helloworld:latest
+          image: quay.io/jfronius/golang-helloworld:2026-09-22
           ports:
             - containerPort: 8080
           volumeMounts:
