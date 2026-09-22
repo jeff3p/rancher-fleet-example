@@ -18,6 +18,13 @@ spec:
           image: quay.io/jfronius/golang-helloworld:2026-09-22
           ports:
             - containerPort: 8080
+          env:
+            - name: DISPLAY_GREETING
+              value: "true"
+            - name: MAX_ITEMS
+              value: "150"
+            - name: RETRY_COUNT
+              value: "15"
           volumeMounts:
             - name: pv-data
               mountPath: /pv-data
